@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>FILES/SECOND PAGE PIC (2).png</file>
+        <file>FILES/FIRTS PAGE PIC.png</file>
+        <file>FILES/FAT_HATER_GYM_dark.png</file>
+        <file>FILES/LOGO.png</file>
+        <file>FILES/GYM1979.png</file>
+        <file>FILES/GYMNOW.png</file>
+        <file>FILES/checkmark.png</file>
+        <file>FILES/bale-column-text-black.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReceptionistPageDialog</class>
+ <widget class="QDialog" name="ReceptionistPageDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>444</width>
+    <height>184</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RECEPTION LOGIN</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/icons/FILES/LOGO.png</normalon>
+   </iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #111111;
+    color: #FFD700;
+    font-family: Segoe UI;
+    font-size: 11pt;
+}
+
+QLabel {
+    color: #FFD700;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+QLabel#label,
+QLabel#label_3 {
+    min-width: 70px;
+}
+
+QLineEdit {
+    background-color: #1A1A1A;
+    color: white;
+    border: 2px solid #2D2D2D;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 11pt;
+}
+
+QLineEdit:focus {
+    border: 2px solid #FFD700;
+}
+
+QPushButton#pushButton_2 {
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+QPushButton#pushButton_2:hover {
+    background-color: #FFE44D;
+}
+
+QPushButton#pushButton_2:pressed {
+    background-color: #D4AF37;
+}
+
+
+
+QLabel#label_2,
+QLabel#label_4 {
+    color: #FF4D4D;
+    font-size: 10pt;
+    font-weight: bold;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Email:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="placeholderText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: transparent;
+    color: #ffff00;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 10.5pt;
+    font-weight: 700;
+}
+
+QPushButton:hover {
+    color: #e6e600;
+}
+
+QPushButton:pressed {
+    color: #bfbf00;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>NEXT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MemberMainDialog</class>
+ <widget class="QDialog" name="MemberMainDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>670</width>
+    <height>818</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MEMBERSHIP SYSTEM </string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/icons/FILES/LOGO.png</normalon>
+   </iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog, QWidget {
+    background-color: #111111;
+    color: white;
+    font-family: Segoe UI;
+}
+
+QFrame {
+    background-color: #1a1a1a;
+    border: 1px solid #2c2c2c;
+    border-radius: 12px;
+}
+
+QLabel {
+    color: white;
+    border: none;
+    background: transparent;
+}
+
+#label_30 {
+    color: #FFD700;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#label_42,
+#label_44,
+#label_46 {
+    color: #FFD700;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#trainerLabel_2 {
+    color: #FFD700;
+    padding: 10px;
+}
+
+QPushButton {
+    background-color: #FFD700;
+    color: #111111;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #e6c200;
+}
+
+QPushButton:pressed {
+    background-color: #c9aa00;
+}
+
+QToolButton {
+    background-color: #222222;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+QToolButton:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
+QLCDNumber {
+    background-color: #111111;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+}
+
+QProgressBar {
+    border: none;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    text-align: center;
+    color: white;
+    height: 22px;
+}
+
+QProgressBar::chunk {
+    background-color: #FFD700;
+    border-radius: 8px;
+}
+
+QTextEdit {
+    background-color: #0f0f0f;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
+QScrollArea {
+    border: none;
+    background-color: #111111;
+}
+
+QScrollBar:vertical {
+    background: #0d0d0d;
+    width: 10px;
+    border: none;
+}
+
+QScrollBar::handle:vertical {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #555555,
+        stop:1 #888888
+    );
+    border-radius: 5px;
+    min-height: 40px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #FFD700,
+        stop:1 #fff07a
+    );
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+#label_31 {
+    border: 3px solid #FFD700;
+    border-radius: 60px;
+    background-color: #1a2332;
+}
+
+#statusCircleLabel_3 {
+    min-width: 14px;
+    max-width: 14px;
+    min-height: 14px;
+    max-height: 14px;
+    border-radius: 7px;
+    background-color: #00d26a;
+}
+
+#frame_15,
+#frame_16,
+#frame_17,
+#frame_20,
+#frame_21,
+#recentActivityLogFrame_2,
+#frame_26 {
+    background-color: #181818;
+    border: 1px solid #2e2e2e;
+    border-radius: 15px;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>505</width>
+       <height>800</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QScrollArea {
+    border: none;
+    background-color: #111111;
+}
+
+QScrollBar:vertical {
+    background: #1a1a1a;
+    width: 12px;
+    margin: 0px;
+    border: none;
+}
+
+QScrollBar::handle:vertical {
+    background: #FFD700;
+    min-height: 40px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #ffea4d;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    border: none;
+    background: none;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: #1a1a1a;
+}</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-485</y>
+        <width>640</width>
+        <height>1339</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QFrame" name="frame_14">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_19">
+          <item>
+           <widget class="QWidget" name="Topic_2" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_20">
+             <item>
+              <widget class="QLabel" name="label_30">
+               <property name="text">
+                <string>MEMBERSHIP SYSTEM</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignHCenter|Qt::AlignTop</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_6" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="dashboardPushButton_2">
+                  <property name="text">
+                   <string>🏠 HOME</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_15">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QWidget" name="widget_7" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout_21">
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_31">
+                  <property name="minimumSize">
+                   <size>
+                    <width>120</width>
+                    <height>120</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>120</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QToolButton" name="changepicToolButton_3">
+                  <property name="text">
+                   <string>Change Photo</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton">
+                  <property name="text">
+                   <string>Reset</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_8" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout_22">
+                <item>
+                 <widget class="QLabel" name="label_32">
+                  <property name="text">
+                   <string>FULL NAME:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_33">
+                  <property name="text">
+                   <string>EMAIL:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="widget_9" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                    <widget class="QLabel" name="label_34">
+                     <property name="text">
+                      <string>STATUS:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                    <widget class="QLabel" name="statusCircleLabel_3">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_35">
+                  <property name="text">
+                   <string>ACCOUNT TYPE:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_36">
+                  <property name="text">
+                   <string>MEMBER ID:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_37">
+                  <property name="text">
+                   <string>MEMBER SINCE:</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_16">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_23">
+             <item>
+              <widget class="QLabel" name="trainerLabel_2">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Trainer&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;NONE&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_17">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_24">
+             <item>
+              <widget class="QFrame" name="frame_18">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_25">
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_38">
+                  <property name="text">
+                   <string>Workout Plan</string>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignLeft">
+                 <widget class="QLCDNumber" name="lcdNumber_3"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_19">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_26">
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_39">
+                  <property name="text">
+                   <string>Diet Plan</string>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignLeft">
+                 <widget class="QLCDNumber" name="lcdNumber_4"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_20">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_27">
+             <item>
+              <widget class="QLabel" name="label_40">
+               <property name="text">
+                <string>Membership Usage</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QProgressBar" name="progressBar_2">
+               <property name="value">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_21">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QFrame" name="frame_22">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_28">
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_41">
+                  <property name="text">
+                   <string>Sessions Used</string>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_42">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_23">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_29">
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_43">
+                  <property name="text">
+                   <string>Sessions Left</string>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_44">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_24">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_30">
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_45">
+                  <property name="text">
+                   <string>Total Sessions</string>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_46">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="recentActivityLogFrame_2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>220</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_31">
+             <item>
+              <widget class="QLabel" name="label_47">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; color:#ffff00;&quot;&gt;Activity Log&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_25">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_32">
+                <item>
+                 <widget class="QPlainTextEdit" name="plainTextEdit"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_26">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_33">
+             <item>
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="text">
+                <string>Renew Membership Now</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_50">
+               <property name="text">
+                <string>☎️ Need help? </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="text">
+                <string>Contact Us</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_51">
+            <property name="text">
+             <string>©️ 2026 FATHATERGYM. ALL RIGHTS RESERVED  </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

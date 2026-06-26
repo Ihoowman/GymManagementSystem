@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1216</width>
+    <height>992</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/icons/FILES/LOGO.png</normalon>
+   </iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+    background-color:#071426;
+}
+
+QScrollArea
+{
+    background-color:#071426;
+    border:none;
+}
+
+QScrollArea &gt; QWidget &gt; QWidget
+{
+    background-color:#071426;
+}
+
+QLabel
+{
+    color:white;
+    background:transparent;
+    border:none;
+}
+
+QLabel#label
+{
+    min-width:140px;
+    min-height:50px;
+}
+
+QLabel#label_2,
+QLabel#label_3,
+QLabel#label_7
+{
+    background-color:#0D2038;
+    border:2px solid #FFD700;
+    border-radius:15px;
+}
+
+QPushButton#contactusbtn
+{
+    background:#0D2038;
+    color:#FFD700;
+    border:2px solid #FFD700;
+    border-radius:10px;
+    padding:10px 20px;
+    font-weight:bold;
+}
+
+QPushButton#contactusbtn:hover
+{
+    background:#FFD700;
+    color:#071426;
+}
+
+QPushButton#loginbtn
+{
+    background:#FFD700;
+    color:#071426;
+    border:none;
+    border-radius:10px;
+    padding:10px 25px;
+    font-weight:bold;
+}
+
+QPushButton#loginbtn:hover
+{
+    background:#FFF07A;
+}
+
+QWidget#widget
+{
+    background-color:#0A1627;
+    border-bottom:2px solid #FFD700;
+}
+
+QWidget#widget_2,
+QWidget#widget_3,
+QWidget#widget_5
+{
+    background:transparent;
+}
+
+QLabel#label_4,
+QLabel#label_6
+{
+    color:#E6E6E6;
+    font-size:12pt;
+}
+
+QLabel#label_5
+{
+    color:#FFD700;
+    font-size:22pt;
+    font-weight:900;
+}
+
+QScrollBar:vertical
+{
+    background:#0D2038;
+    width:12px;
+    border:none;
+}
+
+QScrollBar::handle:vertical
+{
+    background:#FFD700;
+    border-radius:5px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical
+{
+    height:0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical
+{
+    background:none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #111111;
+</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>15</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="contactusbtn">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+           <pointsize>8</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	color: white;
+	background-color: black;
+	padding: 11px;
+	border: 1px solid white;
+}
+
+QPushButton:hover {
+	color:  #111111;
+	border: 1px solid #fede05;
+	background-color: #fede05;
+}</string>
+         </property>
+         <property name="text">
+          <string>CONTACT US</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="loginbtn">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	color: #111111;
+	background-color: #fede05;
+	padding: 10px 25px 10px 25px;
+	border: 1px solid #fede05;
+}
+
+QPushButton:hover {
+	color:  #111111;
+	border: 1px solid #bb9e05;
+	background-color: #bb9e05;
+}</string>
+         </property>
+         <property name="text">
+          <string>LOGIN</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #111c21;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-253</y>
+         <width>1186</width>
+         <height>1110</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>350</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QWidget" name="widget_4" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; font-style:italic; color:#ffff00;&quot;&gt;FORTHY-EIGHT YEARS OF &lt;br/&gt;SERIOUS TRAINING&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffff7f;&quot;&gt;For 48 years no other gym has been responsible for more life-&lt;br/&gt;changing transformations and fitness achievements than&lt;br/&gt;FAT HATER GYM. From a small gym in Ghasrodasht street, Shiraz to&lt;br/&gt;the most well-known traditional fitness company in the world &lt;br/&gt;spanning 6 continents.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>250</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_5" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffff7f;&quot;&gt;Built on discipline, hard work, and respect for the sport, we have stayed&lt;br/&gt;- true to the classic spirit of bodybuilding while constantly evolving&lt;br/&gt; with the times. &lt;br/&gt;Today, FAT HATER GYM is more than a name—it’s a community &lt;br/&gt;where beginners become athletes, goals become routines, and&lt;br/&gt;routines become lifestyles. &lt;br/&gt;Step inside and you’ll feel it: &lt;br/&gt;the energy, the history, and the &lt;br/&gt;standards that push every member to be stronger than yesterday.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QFrame" name="analyticsFrame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QWidget" name="chartWidget" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>200</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1216</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

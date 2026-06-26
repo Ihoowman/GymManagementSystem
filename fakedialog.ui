@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FakeDialog</class>
+ <widget class="QDialog" name="FakeDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ZARINPAL PAYMENT</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/icons/FILES/LOGO.png</normalon>
+   </iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame#frame {
+    background-color: #f5f7fb;
+    border-radius: 16px;
+}
+
+
+QLabel#label_2 {
+    color: #777;
+    font-size: 12px;
+}
+QFrame#frame_2 {
+    background-color: white;
+    border-radius: 14px;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+}
+QLabel#label_3 {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 13px;
+}
+QLabel#label_5,
+QLabel#label_6 {
+    color: #555;
+    font-size: 12px;
+}
+
+QLabel#label_7 {
+    font-weight: bold;
+    color: #111;
+    font-size: 13px;
+}
+QProgressBar {
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    height: 10px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #00c853;
+    border-radius: 6px;
+}
+QPushButton {
+    background-color: #00c853;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #00e676;
+}
+
+QPushButton:pressed {
+    background-color: #00a844;
+}
+
+QPushButton:disabled {
+    background-color: #cfd8dc;
+    color: #888;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color : black;
+</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;ZARINPAL PAYMENT GATEWAY &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string> Secure Payment Processing Page </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>🔄 Redirecting to secure payment...  </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>💰  Total:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="value">
+         <number>24</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Pay Now</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

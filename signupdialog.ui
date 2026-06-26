@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignupDialog</class>
+ <widget class="QDialog" name="SignupDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>395</width>
+    <height>511</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>395</width>
+    <height>511</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>395</width>
+    <height>511</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>SIGNUP</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/icons/FILES/LOGO.png</normalon>
+   </iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDialog#SignupDialog {
+    background-color: #000000;
+}
+
+QFrame#signupCard {
+    background-color: #0d0d0d;
+    border: 1px solid #1f1f1f;
+    border-radius: 20px;
+}
+
+QLabel#titleLabel {
+    color: #FFD400;
+    font-size: 24pt;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: transparent;
+}
+
+QLabel#subtitleLabel {
+    color: #9a9a9a;
+    font-size: 10pt;
+    font-weight: 500;
+    background: transparent;
+}
+
+QLineEdit#fullNameEdit,
+QLineEdit#emailEdit,
+QLineEdit#numberEdit,
+QPlainTextEdit#addressEdit, QComboBox#comboBox {
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 11pt;
+    selection-background-color: #FFD400;
+    selection-color: #000000;
+}
+
+QLineEdit#fullNameEdit:focus,
+QLineEdit#emailEdit:focus,
+QLineEdit#numberEdit:focus,
+QPlainTextEdit#addressEdit:focus {
+    border: 1px solid #FFD400;
+    background-color: #151515;
+    color: #ffffff;
+}
+QWidget#addressRow {
+    background: transparent;
+    border: none;
+}
+
+QPushButton#expandButton {
+    background-color: #111111;
+    color: #FFD400;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    font-size: 16pt;
+    font-weight: 900;
+    min-width: 42px;
+    max-width: 42px;
+    min-height: 42px;
+    max-height: 42px;
+    padding: 0px;
+}
+
+QPushButton#expandButton:hover {
+    background-color: #FFD400;
+    color: #000000;
+    border: 1px solid #FFD400;
+}
+
+QPushButton#expandButton:pressed {
+    background-color: #e6be00;
+    color: #000000;
+}
+
+QPushButton#signupButton {
+    background-color: #FFD400;
+    color: #000000;
+    border: none;
+    border-radius: 14px;
+    padding: 14px;
+    font-size: 11pt;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+QPushButton#signupButton:hover {
+    background-color: #ffe14d;
+}
+
+QPushButton#signupButton:pressed {
+    background-color: #e6be00;
+}
+
+QWidget#loginRow {
+    background: transparent;
+    border: none;
+}
+
+QLabel#accountLabel {
+    color: #9a9a9a;
+    font-size: 10pt;
+    font-weight: 500;
+    background: transparent;
+}
+
+QPushButton#loginLinkButton {
+    background: transparent;
+    border: none;
+    color: #FFD400;
+    font-size: 10pt;
+    font-weight: 800;
+    text-decoration: underline;
+    padding: 0px;
+}
+
+QPushButton#loginLinkButton:hover {
+    color: #fff07a;
+}
+
+QPushButton#loginLinkButton:pressed {
+    color: #e6be00;
+}
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QWidget" name="signupCard" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="titleLabel">
+        <property name="text">
+         <string>ENTER YOUR DETAILS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="fullNameEdit">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>FULL NAME</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="emailEdit">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>EMAIL (GMAIL)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="numberRow" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;+98&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="numberEdit">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>ENTER YOUR NUMBER</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QRadioButton" name="radioButtonMale">
+           <property name="styleSheet">
+            <string notr="true">color:rgb(255, 255, 0)</string>
+           </property>
+           <property name="text">
+            <string>MALE</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButtonFemale">
+           <property name="styleSheet">
+            <string notr="true">color:rgb(255, 255, 0)</string>
+           </property>
+           <property name="text">
+            <string>FEMALE</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="addressRow" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPlainTextEdit" name="addressEdit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="lineWrapMode">
+            <enum>QPlainTextEdit::WidgetWidth</enum>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>ADDRESS</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="expandButton">
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="signupButton">
+        <property name="text">
+         <string>SIGNUP</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="loginRow" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="accountLabel">
+           <property name="text">
+            <string>Already have an account?</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="loginLinkButton">
+           <property name="text">
+            <string>LOGIN</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

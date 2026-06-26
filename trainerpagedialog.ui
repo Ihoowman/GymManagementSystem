@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>trainerPageDialog</class>
+ <widget class="QDialog" name="trainerPageDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>202</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #111111;
+    color: #FFD700;
+    font-family: &quot;Segoe UI&quot;;
+}
+
+QLabel {
+    color: #FFD700;
+    font-size: 12pt;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+QLineEdit {
+    background-color: #1A1A1A;
+    color: white;
+    border: 2px solid #2D2D2D;
+    border-radius: 12px;
+    padding: 8px 12px;
+    min-height: 22px;
+    font-size: 11pt;
+    selection-background-color: #FFD700;
+    selection-color: black;
+}
+
+QLineEdit:focus {
+    border: 2px solid #FFD700;
+    background-color: #202020;
+}
+
+QLineEdit:hover {
+    border: 2px solid #444444;
+}
+
+QPushButton#pushButton {
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+QPushButton#pushButton:hover {
+    background-color: #FFE44D;
+}
+
+QPushButton#pushButton:pressed {
+    background-color: #D4AF37;
+}
+
+QPushButton#pushButton:disabled {
+    background-color: #555555;
+    color: #AAAAAA;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="verticalSpacing">
+       <number>40</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="emailLabel">
+        <property name="text">
+         <string>Email:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="emailLineEdit">
+        <property name="placeholderText">
+         <string>Enter your GMAIL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="passwordLabel">
+        <property name="text">
+         <string>Password:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="passwordLineEdit">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Enter your PASSWORD</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignRight">
+    <widget class="QPushButton" name="pushButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+    background-color: transparent;
+    color: #ffff00;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 10.5pt;
+    font-weight: 700;
+}
+
+QPushButton:hover {
+    color: #e6e600;
+}
+
+QPushButton:pressed {
+    color: #bfbf00;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>NEXT</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

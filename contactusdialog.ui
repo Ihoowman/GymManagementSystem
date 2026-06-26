@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ContactUsDialog</class>
+ <widget class="QDialog" name="ContactUsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>239</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>690</width>
+    <height>239</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>690</width>
+    <height>239</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>CONTACT US</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/icons/FILES/LOGO.png</normalon>
+   </iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog, QWidget {
+    background-color: #111111;
+    color: white;
+    font-family: Segoe UI;
+}
+
+QLabel {
+    color: white;
+    border: none;
+    background: transparent;
+    font-size: 11pt;
+}
+
+#label,
+#label_3,
+#label_5 {
+    color: #FFD700;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#label_2,
+#label_4,
+#label_6 {
+    color: white;
+    font-size: 11pt;
+    font-weight: 600;
+    padding: 8px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+}
+
+#label_2:hover,
+#label_4:hover {
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    background-color: #202020;
+}
+
+QWidget#widget {
+    background-color: #181818;
+    border: 1px solid #2e2e2e;
+    border-radius: 15px;
+}
+
+QWidget#widget_2,
+QWidget#widget_3,
+QWidget#widget_4 {
+    background-color: transparent;
+    border: none;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>EMAIL:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="ClickCopyLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>homanfatemifard@gmail.com</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_4" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>PHONE NUMBER:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="ClickCopyLabel" name="label_4">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>+98 917 787 9872</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>ADDRESS:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>LOCATION</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ClickCopyLabel</class>
+   <extends>QLabel</extends>
+   <header>copylabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
